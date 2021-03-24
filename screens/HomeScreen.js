@@ -18,7 +18,7 @@ constructor(){
   goToBuzzerScreen = (buzzercolor) => {
     var teamRef = db.ref('teams/'+ buzzercolor);
     teamRef.update({
-      enabled: false
+      enabled: true
     });
     this.props.navigation.navigate('BuzzerScreen', { color: buzzercolor });
   };

@@ -17,6 +17,7 @@ class SoundButton extends React.Component {
     var query = db.ref('teams/' + buttonColor + '/').update({
       isButtonPressed: true,
       timestamp: firebase.database.ServerValue.TIMESTAMP,
+      
     });
   }
 
